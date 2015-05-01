@@ -200,7 +200,10 @@ void pouch::printPouch(){//prints out everything in the pouch
     cout<<"Gem's Found: "<<gemCount<<endl;
     cout<<"Gem's Collected: ";
     for(int i = 0; i<3;i++){
-        cout<<gems[i];
+        if (i == 2)
+            cout<<gems[i]<<", ";
+        else
+            cout<<gems[i];
     }
     cout<<endl;
 
